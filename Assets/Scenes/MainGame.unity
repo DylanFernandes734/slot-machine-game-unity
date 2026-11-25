@@ -119,6 +119,78 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &169002868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 169002870}
+  - component: {fileID: 169002869}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &169002869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169002868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70ba7cfe7bc05ca42ba0b5675b29c357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reels:
+  - {fileID: 1244622341}
+  - {fileID: 1234820166}
+  - {fileID: 1301356761}
+  symbolsConfig:
+  - symbolName: 7
+    symbolSprite: {fileID: 21300000, guid: 347e04f0a6eb8ea48906737ee2b76054, type: 3}
+    payoutMultiplier: 10
+  - symbolName: Cherries
+    symbolSprite: {fileID: 21300000, guid: 8d03f75c6c7a43542bcef99ed03ddaa1, type: 3}
+    payoutMultiplier: 5
+  - symbolName: Bell
+    symbolSprite: {fileID: 21300000, guid: 5d01790734029bd42bd88264b90a2e25, type: 3}
+    payoutMultiplier: 3
+  - symbolName: Bell
+    symbolSprite: {fileID: 21300000, guid: bd1113a76422d274ab0bdf0e050174f2, type: 3}
+    payoutMultiplier: 2
+  balanceText: {fileID: 707759885}
+  winText: {fileID: 266527723}
+  betText: {fileID: 800398217}
+  spinButton: {fileID: 1069234787}
+  betIncreaseBtn: {fileID: 792431547}
+  betDecreaseBtn: {fileID: 1919749556}
+  playerBalance: 1000
+  currentBet: 10
+  minBet: 5
+  maxBet: 100
+  betStep: 5
+--- !u!4 &169002870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169002868}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 518.5425, y: 110.27214, z: -1.2423705}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &179193252
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,7 +376,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17, y: 331}
+  m_AnchoredPosition: {x: -258.16, y: 331}
   m_SizeDelta: {x: 658, y: 277}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &257000434
@@ -592,7 +664,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 574, y: 331}
+  m_AnchoredPosition: {x: 300, y: 331}
   m_SizeDelta: {x: 658, y: 277}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &360218428
@@ -1355,8 +1427,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -376, y: 35.753}
-  m_SizeDelta: {x: 149.495, y: 149.49}
+  m_AnchoredPosition: {x: 261.677, y: -382.3}
+  m_SizeDelta: {x: 146.141, y: 130.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &792431547
 MonoBehaviour:
@@ -1764,7 +1836,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 51.529, y: -39.545}
+  m_AnchoredPosition: {x: 18.097, y: -46}
   m_SizeDelta: {x: 816, y: 624}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1069234787
@@ -1858,6 +1930,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1234820165}
+  - component: {fileID: 1234820166}
   m_Layer: 5
   m_Name: Reel_1
   m_TagString: Untagged
@@ -1888,6 +1961,26 @@ RectTransform:
   m_AnchoredPosition: {x: -5.0097, y: 0}
   m_SizeDelta: {x: 110.02, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1234820166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234820164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3598b1460c32ce04fbafa24ff1a2fcc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slots:
+  - {fileID: 1604845800}
+  - {fileID: 469441752}
+  - {fileID: 179193254}
+  - {fileID: 619071529}
+  minSpinDuration: 2
+  spinSpeed: 1200
+  slotHeight: 160
 --- !u!1 &1244622339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,6 +1990,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1244622340}
+  - component: {fileID: 1244622341}
   m_Layer: 5
   m_Name: Reel_0
   m_TagString: Untagged
@@ -1927,6 +2021,26 @@ RectTransform:
   m_AnchoredPosition: {x: -165, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1244622341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244622339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3598b1460c32ce04fbafa24ff1a2fcc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slots:
+  - {fileID: 1794154362}
+  - {fileID: 1837892979}
+  - {fileID: 1916568802}
+  - {fileID: 828515256}
+  minSpinDuration: 2
+  spinSpeed: 1200
+  slotHeight: 160
 --- !u!1 &1259041829
 GameObject:
   m_ObjectHideFlags: 0
@@ -2015,6 +2129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1301356760}
+  - component: {fileID: 1301356761}
   m_Layer: 5
   m_Name: Reel_2
   m_TagString: Untagged
@@ -2045,6 +2160,26 @@ RectTransform:
   m_AnchoredPosition: {x: 165, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1301356761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301356759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3598b1460c32ce04fbafa24ff1a2fcc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slots:
+  - {fileID: 467748029}
+  - {fileID: 1629093858}
+  - {fileID: 1898125247}
+  - {fileID: 275306947}
+  minSpinDuration: 2
+  spinSpeed: 1200
+  slotHeight: 160
 --- !u!1 &1359534426
 GameObject:
   m_ObjectHideFlags: 0
@@ -2699,8 +2834,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -907, y: 33.718}
-  m_SizeDelta: {x: 152.98, y: 153.56}
+  m_AnchoredPosition: {x: -258.157, y: -382.3}
+  m_SizeDelta: {x: 150.665, y: 130.415}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1919749556
 MonoBehaviour:
@@ -2819,8 +2954,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -640, y: 35.753}
-  m_SizeDelta: {x: 455.402, y: 205.495}
+  m_AnchoredPosition: {x: 3.887, y: -382.296}
+  m_SizeDelta: {x: 457.726, y: 163.664}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2088229279
 MonoBehaviour:
@@ -2868,3 +3003,4 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 485285329}
   - {fileID: 1259041832}
+  - {fileID: 169002870}
